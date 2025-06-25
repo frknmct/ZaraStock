@@ -10,7 +10,7 @@ import os
 import requests
 from scraperHelpers import check_stock_zara, check_stock_bershka
 
-with open("config.json", "r") as config_file:
+with open("ZaraStockChecker-main/config.json", "r") as config_file:
     config = json.load(config_file)
 
 urls_to_check = config["urls"]
