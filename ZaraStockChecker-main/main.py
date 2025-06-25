@@ -19,7 +19,7 @@ sizes_to_check = config["sizes_to_check"]
 sleep_min_seconds = config["sleep_min_seconds"]
 sleep_max_seconds = config["sleep_max_seconds"]
 
-pygame.mixer.init()
+# pygame.mixer.init()
 
 cart_status = {item["url"]: False for item in urls_to_check}
 
@@ -36,9 +36,9 @@ else:
     TELEGRAM_ENABLED = True
 
 # This fcn is for notification sound
-def play_sound(sound_file):
-    pygame.mixer.music.load(sound_file)
-    pygame.mixer.music.play()
+# def play_sound(sound_file):
+    # pygame.mixer.music.load(sound_file)
+    # pygame.mixer.music.play()
 
 # This fcn is for sending messages
 def send_telegram_message(message):
